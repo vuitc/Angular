@@ -1,0 +1,17 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <form class="form-inline">
+      <div class="form-group">
+        <!-- <label for="">Tìm sản phẩm</label> -->
+        <input type="text" size="50" [(ngModel)]="searching" (ngModelChange)="filterResults()" name="searching" id=""
+          class="input form-control" placeholder="Tìm sản phẩm" mall />
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6 text-right">
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modelId">
+      Add new
+    </button>
+  </div>
+</div>
+<app-product-list [productList]="filterProductList"></app-product-list>

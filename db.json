@@ -1,0 +1,261 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "iPhone 14",
+      "productCode": "DT-01",
+      "releaseDate": "2024-03-06",
+      "price": "21990000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/dt/iphone14.jpg",
+      "description": "iPhone 14 128GB được xem là mẫu smartphone bùng nổ của nhà táo trong năm 2022",
+      "inStock": 10,
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "productName": "OPPO Reno11 5G",
+      "productCode": "DT-02",
+      "releaseDate": "2024-03-02",
+      "price": "11220000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/dt/oppo-reno-11.jpg",
+      "description": "Máy sở hữu thiết kế trẻ trung, màn hình Super AMOLED sống động, camera 50 MP chất lượng và pin 5000 mAh cho thời gian sử dụng lâu dài.",
+      "inStock": 15,
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "productName": "Samsung Galaxy A25 5G",
+      "productCode": "DT-03",
+      "releaseDate": "2024-03-17",
+      "price": "5790000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/dt/samsung-galaxy-a25.jpg",
+      "description": "Điểm độc đáo của chiếc điện thoại nằm ở thiết kế thu hút, cấu hình mạnh mẽ và khả năng chụp ảnh ấn tượng. Được tạo ra để đáp ứng một loạt các nhu cầu từ giải trí, nhiếp ảnh đến công việc đòi hỏi hiệu năng cao.",
+      "inStock": 10,
+      "categoryId": 1
+    },
+    {
+      "id": "4",
+      "productName": "Xiaomi Redmi 12",
+      "productCode": "DT-04",
+      "releaseDate": "2024-03-20",
+      "price": "9560000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/dt/xiaomi-redmi-12.jpg",
+      "description": "Xiaomi Redmi 12 - chiếc điện thoại giá rẻ với thiết kế tinh tế, màn hình lớn cùng camera sắc nét và tích hợp vi xử lý MediaTek Helio G88 mạnh",
+      "inStock": 12,
+      "categoryId": 1
+    },
+    {
+      "id": "5",
+      "productName": "Vivo Y22s 8GB",
+      "productCode": "DT-05",
+      "releaseDate": "2024-03-01",
+      "price": "7660000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/dt/vivo-y22s.jpg",
+      "description": "Phiên bản này được hãng chú trọng nhiều vào phần thiết kế nhằm mang đến diện mạo đẹp mắt và sang trọng đối với những mẫu máy giá rẻ.",
+      "inStock": 12,
+      "categoryId": 1
+    },
+    {
+      "id": "6",
+      "productName": "Laptop Asus Vivobook Go 15",
+      "productCode": "LT-01",
+      "releaseDate": "2024-03-02",
+      "price": "12300000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/laptop/asus.jpg",
+      "description": "Mang phong cách thiết kế sang trọng, hiệu năng mạnh mẽ cùng tính đa năng sử dụng, chắc chắn sẽ giúp bạn đáp ứng mọi tác vụ công việc và học tập hàng ngày",
+      "inStock": 3,
+      "categoryId": 2
+    },
+    {
+      "id": "7",
+      "productName": "Laptop Dell Inspiron 15 3530 i7 1355U",
+      "productCode": "LT-02",
+      "releaseDate": "2024-03-03",
+      "price": "25200000",
+      "starRating": 4.5,
+      "imageUrl": "./assets/laptop/dell.jpg",
+      "description": "Đường nét sang trọng, thông số vượt trội cùng đa tính năng hấp dẫn",
+      "inStock": 7,
+      "categoryId": 2
+    },
+    {
+      "id": "8",
+      "productName": "Laptop HP Pavilion 15 eg2082TU i5",
+      "productCode": "LT-03",
+      "releaseDate": "2024-03-08",
+      "price": "15290000",
+      "starRating": 3.5,
+      "imageUrl": "./assets/laptop/hp.jpg",
+      "categoryId": 2,
+      "description": "Gây ấn tượng bởi sự đẳng cấp đến từ thiết kế thanh lịch, sang trọng cùng hiệu năng vượt bậc nhờ vào con chip Intel thế hệ 12 mạnh mẽ",
+      "inStock": 4
+    },
+    {
+      "id": "9",
+      "productName": "Laptop Acer Nitro 5 Gaming AN515 57 5669 i5 ",
+      "productCode": "LT-04",
+      "releaseDate": "2024-03-09",
+      "price": "15200000",
+      "starRating": 4.7,
+      "imageUrl": "./assets/laptop/acer.jpg",
+      "description": "Khơi nguồn mọi cảm hứng game thủ với phong cách thiết kế đậm chất gaming cùng những chuyển động mượt mà với card đồ họa NVIDIA GeForce GTX, mang lại chiến thắng tuyệt đối cho người dùng trên mọi chiến trường ảo.",
+      "inStock": 12,
+      "categoryId": 2
+    },
+    {
+      "id": "10",
+      "productName": "MSI Gaming GF63 12UCX i5 12450H",
+      "productCode": "LT-05",
+      "releaseDate": "2024-03-11",
+      "price": "16290000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/laptop/msi.jpg",
+      "description": "Sở hữu cấu hình mạnh mẽ, phong cách thiết kế gaming",
+      "inStock": 12,
+      "categoryId": 2
+    },
+    {
+      "id": "11",
+      "productName": "ASUS AIO A3402WBAK i3 1215U",
+      "productCode": "PC-01",
+      "releaseDate": "2024-03-07",
+      "price": "8700000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/pc/asus.jpg",
+      "description": "Được hoàn thiện với nhiều tính năng hữu ích, phần cứng vượt trội cùng khung màn hình vừa đủ 23.8 inch hiển thị thoải mái đa nội dung. Sản phẩm chính là minh chứng tuyệt vời cho lối làm việc tương lai, vừa tích hợp nhỏ gọn và tiện lợi, vừa hỗ trợ giải quyết mọi tác vụ nhanh chóng.",
+      "inStock": 3,
+      "categoryId": 3
+    },
+    {
+      "id": "12",
+      "productName": "HP AIO ProOne 240 G9 i3 1215U 23.8 inch",
+      "productCode": "PC-02",
+      "releaseDate": "2024-03-04",
+      "price": "14090000",
+      "starRating": 4.5,
+      "imageUrl": "./assets/pc/hp.jpg",
+      "description": "Sở hữu thiết kế đẹp mắt với lớp vỏ màu đen tinh tế",
+      "inStock": 7,
+      "categoryId": 3
+    },
+    {
+      "id": "13",
+      "productName": "Asus ExpertCenter AIO A5402WVAK i5 1340P",
+      "productCode": "PC-03",
+      "releaseDate": "2024-02-17",
+      "price": "21090000",
+      "starRating": 4.5,
+      "imageUrl": "./assets/pc/asus1.jpg",
+      "description": "sang trọng trong mọi không gian cùng với hiệu năng mạnh mẽ sẽ là giải pháp tuyệt vời cho đối tượng người dùng cá nhân hay doanh nghiệp",
+      "inStock": 4,
+      "categoryId": 3
+    },
+    {
+      "id": "14",
+      "productName": "Mẫu iMac 24 inch M3 2023",
+      "productCode": "PC-04",
+      "releaseDate": "2024-02-02",
+      "price": "35980000",
+      "starRating": 4.7,
+      "imageUrl": "./assets/pc/imac.jpg",
+      "categoryId": 3,
+      "description": "Màn hình 4.5K Retina tuyệt đẹp cũng như lột xác hoàn toàn về hiệu năng với con chip M3 đáp ứng mọi nhu cầu từ văn phòng, thực hiện thiết kế đồ hoạ và video chuyên nghiệp.",
+      "inStock": 12
+    },
+    {
+      "id": "15",
+      "productName": " Dell Ultrasharp U3223QE 32 inch 4K",
+      "productCode": "LT-05",
+      "releaseDate": "2024-03-03",
+      "price": "16290000",
+      "starRating": 4.3,
+      "imageUrl": "./assets/pc/ultra.jpg",
+      "description": "Sở hữu kích thước 31.5 inch rộng rãi, chế độ hiển thị 4K cùng nhiều công nghệ trình chiếu hàng đầu, sẽ đắm chìm mọi giác quan của bạn trong các hoạt động dù làm việc hay giải trí.",
+      "inStock": 12,
+      "categoryId": 3
+    },
+    {
+      "id": "16",
+      "productName": "Điện thoại di động12",
+      "productCode": "155",
+      "releaseDate": "2024-03-12",
+      "price": 1200000,
+      "starRating": 5,
+      "imageUrl": "./assets/dt/carousel3.jpg",
+      "description": "Thông tin",
+      "inStock": 15,
+      "categoryId": 4
+    },
+    {
+      "id": "17",
+      "productName": "Tablet01",
+      "productCode": "Tc",
+      "releaseDate": "2024-03-09",
+      "price": 12000000,
+      "starRating": 5,
+      "imageUrl": "./assets/dt/oppo-reno-11.jpg",
+      "description": "Mô tả 01",
+      "inStock": 5,
+      "categoryId": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Điện thoại di động",
+      "img": "./assets/dt/iphone14.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "img": "./assets/laptop/acer.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Máy tính để bàn",
+      "img": "./assets/pc/asus.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Mobile",
+      "img": "./assets/dt/carousel2.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Tablet",
+      "img": "./assets/dt/oppo-reno-11.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "3",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "role": 0
+    },
+    {
+      "id": "4",
+      "email": "admin@admin.com",
+      "password": "11111111",
+      "role": 1
+    },
+    {
+      "id": "5",
+      "email": "admin1@admin.com",
+      "password": "123456789",
+      "role": 1
+    },
+    {
+      "id": "6",
+      "email": "giabao@gmail.com",
+      "password": "12121212",
+      "role": 0
+    }
+  ]
+}

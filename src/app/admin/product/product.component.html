@@ -1,0 +1,130 @@
+
+<div style="margin-top: 10px; min-height: 75vh;">
+  <div class="container-fluid mt-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <button [routerLink]="['/admin/category']" class="btn btn-link ml-auto">Trang quản lí danh mục</button>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId" (click)="clearForm()" >
+        Thêm
+      </button>
+
+    <div class="row mt-2">
+        <div class="form-group col-4">
+          <input type="text" class="form-control" [(ngModel)]="seaching" (ngModelChange)="resultFilter()" placeholder="Tìm sản phẩm">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Tên sản phẩm</th>
+                  <th>Hình ảnh</th>
+                  <th>Mã sản phẩm</th>
+                  <th>Đánh giá</th>
+                  <th>Giá</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of productShopFilter">
+                  <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ product.productName }}</td>
+                  <td><img [src]="'/'+product.imageUrl" alt="" class="img-fluid" style="width: 50px;"/></td>
+                  <td>{{ product.productCode }}</td>
+                  <td>
+                    <app-star [Rating]="product.starRating" [nameRating]="product.productName" (outRating)="showRating($event)"></app-star>
+                  </td>
+                  <td>{{ product.price | currency:"VND" }}</td>
+                  <td>
+                    <button class="btn btn-primary"  (click)="Edit(product.id);IsAdd=0;IsUpdate=2; " data-toggle="modal" data-target="#modelId">Edit</button>
+                    <button class="btn btn-danger" (click)="Delete(product.id)">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        <div class="col-3">
+          <div class="col-12">
+            <div class="d-flex flex-column">
+              <h4 class="mb-3">Danh mục</h4>
+              <ul class="list-group list-group-flush">
+                <a [routerLink]="['/admin/category', category.id]" class="list-group-item" *ngFor="let category of categories">
+                  {{ category.name }}
+                </a>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+       
+    </div>
+</div>
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sản phẩm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"  (click)="IsAdd=1;IsUpdate=0;clearForm()">
+            <span aria-hidden="true" >&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formProduct">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="productName">Tên sản phẩm</label>
+                  <input type="text" [formControl]="formProduct.controls.productName" class="form-control" id="productName" placeholder="Nhập tên">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="productCode">Mã code</label>
+                    <input type="text" [formControl]="formProduct.controls.productCode" class="form-control" id="productCode" placeholder="Nhập mã ">            
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="releaseDate">Ngày phát hành</label>
+                    <input type="date" [formControl]="formProduct.controls.releaseDate" class="form-control" id="releaseDate" placeholder="Nhập ngày phát hành">            
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="price">Giá</label>
+                    <input type="number" [formControl]="formProduct.controls.price" class="form-control" id="price" placeholder="Nhập giá">            
+                </div>
+              </div>
+             
+              <div class="col-md-12">
+                <div class="form-group">
+                    <label for="inStock">Tồn kho</label>
+                    <input type="number" [formControl]="formProduct.controls.inStock" class="form-control" id="inStock" placeholder="Tồn kho">            
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="picture">Ảnh</label>
+                  <input type="file" class="form-control-file" (change)="onChange($event)" id="picture" accept="image/*">
+                  <img [src]="'/' + file" width="20%" alt="">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                    <label for="description">Mô tả</label>
+                    <textarea [formControl]="formProduct.controls.description" class="form-control" id="description" placeholder="Nhập mô tả"></textarea>        
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" *ngIf="IsAdd==1" (click)="Add()">Save</button>
+          <button type="button" class="btn btn-primary" *ngIf="IsUpdate==2" (click)="Update()">Update</button>
+          <button type="button" class="btn btn-secondary" (click)="IsAdd=1;IsUpdate=0;clearForm()" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

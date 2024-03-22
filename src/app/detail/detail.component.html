@@ -1,0 +1,22 @@
+<div class="row mt-lg-5" style="min-height: 80vh;">
+    <div class="col-md-6 p-4 text-center " *ngIf="productDetail">
+        <img [src]="productDetail.imageUrl ? '.' + productDetail.imageUrl : ''" width="90%" alt="">
+    </div>
+    <div class="col-md-6 pt-4" *ngIf="productDetail">
+        <h2>{{ productDetail.productName }}</h2>
+        <p class="card-text">
+            <app-star [Rating]="productDetail.starRating" [nameRating]="productDetail.productName" (outRating)="showRating($event)"></app-star>
+        </p>
+        <div class="text-justify">
+            <p>Mã sản phẩm: {{ productDetail.productCode }}</p>
+        </div>
+        <!-- <p class="">Số lượng tồn:{{ productDetail.inStock }}</p> -->
+        <p>Giá : {{ productDetail.price | currency:"VND" }} </p>
+        <p>Mô tả: {{ productDetail.description }} </p>
+        <button (click)="goBack()" class="btn btn-primary mr-2">Back</button>
+        <button *ngIf="productDetail.id" (click)="Add()" class="btn btn-primary">Thêm</button>
+        
+        <br>
+    </div>
+</div>
+
